@@ -6,7 +6,22 @@
         xmlns:local="clr-namespace:Dolgozat0528"
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
+    <Window.Background>
+        <LinearGradientBrush EndPoint="1,1" StartPoint="0,0">
+            <GradientStop Color="#FF373438" Offset="0.126"/>
+            <GradientStop Color="#FF041D4E" Offset="1"/>
+        </LinearGradientBrush>
+    </Window.Background>
     <Grid>
+        <Button Content="Lekérdez" Click="lekerdez_Click" HorizontalAlignment="Left" Margin="483,334,0,0" VerticalAlignment="Top" Height="38" Width="120"/>
+        <ListBox x:Name="lbAdatok" d:ItemsSource="{d:SampleData ItemCount=5}" Margin="0,0,356,0" SelectionChanged="lbAdatok_SelectionChanged"/>
+        <Label x:Name="lbFilmAzon"  Content="-" Foreground="White" HorizontalAlignment="Left" Margin="500,93,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="tb1" HorizontalAlignment="Left" Margin="576,106,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tb2" HorizontalAlignment="Left" Margin="576,147,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tb3" HorizontalAlignment="Left" Margin="576,186,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tb4" HorizontalAlignment="Left" Margin="576,235,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tb5" HorizontalAlignment="Left" Margin="576,274,0,0" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <Button Content="Módosít" Click="modosit_Click" HorizontalAlignment="Left" Margin="654,334,0,0" VerticalAlignment="Top" Height="38" Width="93"/>
 
     </Grid>
 </Window>
